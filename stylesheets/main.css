@@ -1,0 +1,215 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+ul, li {
+  list-style-type: none;
+  padding-left: 0;
+}
+.center {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 7px;
+}
+.right {float: right;}
+.left {float: left;}
+.inline {display: inline;}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(0,0,0,0.35);
+  margin-top: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*  NAV  */
+.navbar-default {
+  background-color: rgba(0,0,0,0);
+  border:none;
+}
+
+ul.nav.navbar-nav{
+  float: right;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+/*  END NAV  */
+
+
+/*  JUMBOTRON  */
+.jumbotron {
+  margin: 0;
+}
+.jumbotron p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.jumbotron .timestamp {
+  font-size: 12px;
+  color: rgba(0,0,0,0.4);
+  /*margin:5px 0 -5px;*/
+}
+.hero h1 {
+  color: white;
+}
+/*  END JUMBOTRON  */
+.hero {
+  height: 600px;
+  margin-top: -50px;
+  /*background: url('../images/aquarium.jpg');*/
+  background-color: transparent;
+  padding: 0;
+}
+.hero-content {
+  margin-top: 100px;
+}
+.for-teachers {
+  padding: 30px 0 40px;
+  background-color: white;
+}
+
+
+/*  CAMERA  */
+.camera {
+  width: 234px;
+  background-color: rgba(0,0,0,0.2);
+  height: 400px;
+  position: absolute;
+  top: 82px;
+  left:33px;
+}
+.camera-btn-container {
+  background-color: #333;
+  height: 80px;
+  position: absolute;
+  top: 402px;
+  left:33px;
+  width: 234px;
+}
+.camera-btn {
+  width: 54px;
+  height: 54px;
+  background-color: white;
+  border-radius: 30px;
+  top: 12px;
+  left:92px;
+  position: absolute;
+}
+.camera-btn-center {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 25px;
+  border:solid 2px #333;
+  top: 18px;
+  left:98px;
+  position: absolute;
+}
+.pressed {
+  transition: all 0.1s ease;
+  background-color: #333;
+}
+.flash {
+   -webkit-animation: flash 0.1s;
+    animation: flash 0.1s;
+}
+
+@-webkit-keyframes flash {
+    from {background-color: rgba(0,0,0,0.2)}
+    to {background-color: rgba(0,0,0,0.8);}
+}
+.use-photo-link, .retake-link {
+  margin-top: 30px;
+}
+.use-photo-link {
+  margin-right: 15px;
+}
+.retake-link {
+  margin-left: 15px;
+}
+
+.focus {
+  width: 90px;
+  height: 90px;
+  border:solid 1px orange;
+  opacity: 0.75;
+  margin: auto;
+  top:110px;
+  position: relative;
+}
+.red {
+  background-color: red;
+}
+
+.demo {
+  position: relative;
+}
+.phone {
+  position: absolute;
+}
+.phone img {
+  width: 300px;
+  padding: 0 15px;
+}
+
+.photo-captured {
+  background: url('../images/penguins_swim.jpg') no-repeat;
+  background-size: cover;
+}
+.faces {
+  margin-top: 15px;
+
+}
+.face {
+  border-radius: 500px;
+  padding:0;
+  border:solid 1px rgba(255,255,255,0.25);
+}
+.selected {
+  border:solid 5px rgba(255,255,255,1);
+}
+.face1 {
+  background: url('../images/face1.jpg');
+  background-size: cover;
+}
+.face2 {
+  background: url('../images/face2.jpg');
+  background-size: cover;
+}
+.face3 {
+  background: url('../images/face3.jpg');
+  background-size: cover;
+}
+.face4 {
+  background: url('../images/face4.jpg');
+  background-size: cover;
+}
+
+
+/*  END CAMERA  */
+
+.cta {
+  padding: 15px 0 20px;
+}
+
+
+
+
