@@ -6,6 +6,32 @@ ul, li {
   list-style-type: none;
   padding-left: 0;
 }
+.navbar .logo {
+  color:white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+.btn {
+  border-radius: 24px;
+}
+.btn-default {
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255,255,255,0);
+  border:solid 1px rgba(255,255,255,0.3);
+}
+
+.btn-default:hover {
+  background-color: rgba(255,255,255,0.1);
+  border:solid 1px rgba(255,255,255,0.5);
+  color: white;
+  cursor: pointer;
+}
+
 .center {
   text-align: center;
 }
@@ -16,9 +42,13 @@ ul, li {
 .right {float: right;}
 .left {float: left;}
 .inline {display: inline;}
-
+.white {color:white;
+}
 h1, h2 {
   font-family: 'Roboto Slab', serif;
+}
+.hero-content h1 {
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 h5 {
@@ -45,7 +75,7 @@ ul.nav.navbar-nav{
   color: white;
   text-transform: uppercase;
   font-weight: 500;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 .navbar {
   margin-bottom: 0;
@@ -85,7 +115,10 @@ ul.nav.navbar-nav{
   padding: 30px 0 40px;
   background-color: white;
 }
-
+.for-teachers h2 {
+  color: rgba(5,70,100,1);
+  font-weight: 700;
+}
 
 /*  CAMERA  */
 .camera {
@@ -138,12 +171,19 @@ ul.nav.navbar-nav{
 }
 .use-photo-link, .retake-link {
   margin-top: 30px;
+  -webkit-animation: slideUp 0.2s;
+  animation: slideUp 0.2s;
 }
 .use-photo-link {
   margin-right: 15px;
 }
 .retake-link {
   margin-left: 15px;
+}
+
+@-webkit-keyframes slideUp {
+  from {top: 40px;}
+  to {top:0px;}
 }
 
 .focus {
@@ -176,7 +216,10 @@ ul.nav.navbar-nav{
 }
 .faces {
   margin-top: 15px;
-
+  opacity: 0;
+}
+.faces.show {
+  opacity: 1;
 }
 .face {
   border-radius: 500px;
@@ -208,8 +251,8 @@ ul.nav.navbar-nav{
 
 .cta {
   padding: 15px 0 20px;
+  background-color: rgba(5,70,100,0.8);
 }
-
 
 
 
