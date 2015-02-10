@@ -17,7 +17,36 @@ $(document).ready(function() {
     photoCapture();
 
     });
+
+  $(document).scroll(function() {
+    var top = $(document).scrollTop();
+    if (top > 980) {
+      setTimeout(function() {
+        $('.value-prop1').addClass('slideDown show');
+      }, 500);
+      secondValueProp();
+    }
+  });
+
+  $('#scrollable-content').scrollTop(130);
+
 });
+
+function secondValueProp() {
+  setTimeout(function(){
+    $('.value-prop2').addClass('slideDown show');
+    $('#scrollable-content').animate({scrollTop:65}, 1000);
+  }, 2000);
+  thirdValueProp();
+}
+
+function thirdValueProp() {
+  setTimeout(function(){
+    $('#scrollable-content').animate({scrollTop:0}, 1000);
+    $('.value-prop3').addClass('slideDown show');
+  }, 3500);
+}
+
 
 function photoCapture() {
   $('.camera').addClass('flash')

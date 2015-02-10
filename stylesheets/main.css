@@ -121,9 +121,12 @@ ul.nav.navbar-nav{
   padding: 30px 0 40px;
   background-color: white;
 }
-.for-teachers h2 {
+.for-teachers h2, .for-parents h2 {
   color: rgba(5,70,100,1);
   font-weight: 700;
+}
+.for-parents.jumbotron {
+  padding-bottom: 0;
 }
 
 .report {
@@ -143,6 +146,36 @@ ul.nav.navbar-nav{
 .note {
   padding-top: 130px;
 }
+
+.phone-img {
+  background: url('../images/iphone6e.png') no-repeat;
+  /*background: url('../images/iPhone-kidcasa-1.png') no-repeat;*/
+  height: 480px;
+  padding: 15px;
+  /*border-bottom: solid 1px rgba(5,70,100,0.2);*/
+  background-size: cover;
+  width: 100%;
+}
+
+.next-screen {
+  height: 380px;
+  width: 270px;
+  background-color: rgba(240,240,240,1);
+  top: 85px;
+  position: relative;
+  left: 28px;
+  padding: 30px;
+}
+.next-screen2 {
+  height: 380px;
+  width: 270px;
+  background-color: rgba(220,220,220,1);
+  top: 100px;
+  position: absolute;
+  left: 58px;
+  padding: 30px;
+}
+
 /*  END JUMBOTRON  */
 
 
@@ -251,7 +284,11 @@ ul.nav.navbar-nav{
   top: 80px;
   left: 15px;
 }
-.faces.show {
+.hide {
+  opacity:0;
+}
+
+.faces.show, .hide.slideDown, .next-screen.show, .next-screen2.show {
   opacity: 1;
 }
 .face {
@@ -295,6 +332,44 @@ ul.nav.navbar-nav{
   padding: 15px 0 20px;
   background-color: rgba(5,70,100,0.8);
 }
+.footer {
+  background-color: rgba(5,70,100,1);
+}
+.footer h5 {
+  color: white
+}
 
 
 
+
+
+#phone-window {
+  height: 200px;
+  width: 312px;
+  position: absolute;
+  top: 147px;
+  left: 39px;
+}
+
+#scrollable-content {
+  height: 333px;
+  overflow: auto;
+  background-color: rgba(200, 200, 200, 1);
+}
+#scrollable-img {
+  background: url('../images/feed4.png');
+  height: 160%;
+  background-size: cover;
+}
+#scrollable-img2 {
+  background: url('../images/feed2.png');
+  height: 100%;
+  background-size: cover;
+}
+#fixed-phone-header {
+  background: url('../images/feed-header.png');
+  background-size: cover;
+  position: absolute;
+  top: 147px;
+  left: 39px;
+}
